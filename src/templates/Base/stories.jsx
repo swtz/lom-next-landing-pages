@@ -1,5 +1,5 @@
 import { Base } from '.';
-import mockBase from './mock';
+import { mockBase } from './mock';
 
 export default {
   title: 'Templates/Base',
