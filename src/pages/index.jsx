@@ -1,9 +1,22 @@
-import styled from 'styled-components';
+import P from 'prop-types';
+import dados from '../../dados';
+import { mapData } from '@/api/map-data';
+import { Home } from '@/templates/Home';
 
-const Heading = styled.h1`
-  background: ${({ theme }) => theme.colors.secondaryColor};
-`;
-
-export default function Home() {
-  return <Heading>Hello, world!</Heading>;
+export default function Index({ data = null }) {
+  return <Home data={data} />;
 }
+
+export const getStaticProps = async () => {
+  const data = mapData(dados);
+
+  return {
+    props: {
+      data,
+    },
+  };
+};
+
+Index.propTypes = {
+  data: P.array,
+};

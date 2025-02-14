@@ -6,7 +6,7 @@ import {
   mapTextGrid,
 } from './map-sections';
 
-import pagesFakeData from './dados.json';
+import pagesFakeData from './dados.js';
 
 describe('map-sections', () => {
   it('should render predefined section if no data', () => {
