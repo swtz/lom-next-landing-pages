@@ -6,3 +6,9 @@
 
 // Aula:
 // 181. Configurando o styled-components
+
+// '_app.jsx' -> permite adicionar props, por exemplo,
+// por página na aplicação next.
+
+// '_document.jsx' -> permite adicionar props, por exemplo,
+// uma vez durante o ciclo de vida da aplicação next.
