@@ -12,3 +12,18 @@
 
 // '_document.jsx' -> permite adicionar props, por exemplo,
 // uma vez durante o ciclo de vida da aplicação next.
+
+// Para verificar se o SSR (com styled-components)
+// está funcionando corretamente, é possível desabilitar
+// o JavaScript no browser e, se os estilos forem
+// persistidos, quer dizer que o 'next' já fez o trabalho
+// de renderizar os componentes React e entregar apenas
+// os arquivos estáticos, ou seja, o lado do cliente
+// ficou livre de qualquer esforço para renderizar os
+// componentes. Ele apenas está usando o que o 'next'
+// entregou para ele.
+
+// Referência:
+// https://github.com/vercel/next.js/tree/canary/examples/with-styled-components
+// Obs.: O repositório acima segue as versões mais recentes do Next.js
+// (para o curso está sendo usada a versão 13 no Next.js).
