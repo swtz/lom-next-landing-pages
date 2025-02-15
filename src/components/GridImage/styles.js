@@ -33,8 +33,8 @@ export const Image = styled.img`
       transition: all 300ms ease-in-out;
 
       &:hover {
-      transform: scale(1.2) rotate(10deg);
-    }
+        transform: scale(1.2) rotate(10deg);
+      }
     }
   `}
 `;

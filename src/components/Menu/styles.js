@@ -20,8 +20,8 @@ export const Container = styled.div`
     transition: all 300ms ease-in-out;
 
     > ${SectionContainer} {
-     padding-top: 0;
-     padding-bottom: 0;
+      padding-top: 0;
+      padding-bottom: 0;
     }
 
     & ${Heading} {
@@ -49,7 +49,7 @@ export const Container = styled.div`
         display: flex;
         justify-content: center;
       }
-    } 
+    }
   `}
 `;
 

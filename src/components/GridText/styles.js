@@ -21,25 +21,25 @@ export const Grid = styled.div`
 
 export const GridElement = styled.div`
   ${({ theme }) => css`
-  ${HeadingContainer} {
-    position: relative;
-    left: 5rem;
-  }
-
-  @media ${theme.media.lteLarge} {
     ${HeadingContainer} {
-      max-width: 80%;
+      position: relative;
+      left: 5rem;
     }
-  }
 
-  ${HeadingContainer}::before {
-    counter-increment: grid-counter;
-    content: counter(grid-counter);
-    position: absolute;
-    font-size: 7rem;
-    top: -3rem;
-    left: -5rem;
-    transform: rotate(15deg);
-  }
+    @media ${theme.media.lteLarge} {
+      ${HeadingContainer} {
+        max-width: 80%;
+      }
+    }
+
+    ${HeadingContainer}::before {
+      counter-increment: grid-counter;
+      content: counter(grid-counter);
+      position: absolute;
+      font-size: 7rem;
+      top: -3rem;
+      left: -5rem;
+      transform: rotate(15deg);
+    }
   `}
 `;

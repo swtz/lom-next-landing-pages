@@ -11,7 +11,7 @@ export const Container = styled.div`
       color: inherit;
       text-decoration: none;
     }
-    
+
     & ${TextComponent} {
       font-size: ${theme.font.sizes.small};
     }

@@ -16,21 +16,19 @@ export const Container = styled.div`
     & ${Heading} {
       margin-bottom: ${theme.spacings.xlarge};
     }
-
   `};
 `;
 
 export const TextContainer = styled.div`
   ${({ theme }) => css`
-  @media ${theme.media.lteMedium} {
+    @media ${theme.media.lteMedium} {
       margin-bottom: ${theme.spacings.large};
     }
   `};
 `;
 
 export const ImageContainer = styled.div`
-  ${({ theme }) => css`
-  `};
+  ${({ theme }) => css``};
 `;
 
 export const Image = styled.img`

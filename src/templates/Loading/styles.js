@@ -20,7 +20,8 @@ export const Container = styled.div`
     z-index: 10;
     background-color: ${theme.colors.primaryColor};
 
-    &::before, &::after {
+    &::before,
+    &::after {
       content: '';
       position: absolute;
       top: 50%;
