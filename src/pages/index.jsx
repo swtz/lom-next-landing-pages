@@ -1,14 +1,19 @@
 import P from 'prop-types';
-import dados from '../../dados';
-import { mapData } from '@/api/map-data';
 import { Home } from '@/templates/Home';
+import { loadPages } from '@/api/load-pages';
 
 export default function Index({ data = null }) {
   return <Home data={data} />;
 }
 
 export const getStaticProps = async () => {
-  const data = mapData(dados);
+  let data = null;
+
+  try {
+    data = await loadPages('look-my-page');
+  } catch (e) {
+    console.log('getStaticProps error:', e);
+  }
 
   return {
     props: {

@@ -5,4 +5,7 @@
 // Seção 10: Next.Js com SSR, SSG e ISR (ou ISG)
 
 // Aula:
-// 190. Página de erro 404
+// 191. Refatoração + retorno de notFound
+
+// Exemplo de requisição para a Strapi API:
+// http://localhost:1337/api/pages?filters[slug]=<slug-name>&populate=deep
