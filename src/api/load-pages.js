@@ -7,8 +7,6 @@ export const loadPages = async (slug = '') => {
     : '';
   const url = `${config.url}/pages/${cleanSlug}&populate=deep`;
 
-  console.log(url);
-
   const raw = await fetch(`${url}`);
   const json = await raw.json();
   const data = mapData(json);

@@ -15,6 +15,12 @@ export const getStaticProps = async () => {
     console.log('getStaticProps error:', e);
   }
 
+  if (!data || !data.length) {
+    return {
+      notFound: true,
+    };
+  }
+
   return {
     props: {
       data,

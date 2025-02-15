@@ -1,17 +1,12 @@
 import P from 'prop-types';
 import Head from 'next/head';
 import { Base } from '../Base';
-import { PageNotFound } from '../PageNotFound';
 import { GridTwoColumns } from '../../components/GridTwoColumns';
 import { GridContent } from '../../components/GridContent';
 import { GridText } from '../../components/GridText';
 import { GridImage } from '../../components/GridImage';
 
 export const Home = ({ data }) => {
-  if (!data || !data.length) {
-    return <PageNotFound />;
-  }
-
   const { menu, sections, footerHtml, slug, title } = data[0];
   const { links, text, link, srcImg } = menu;
 
