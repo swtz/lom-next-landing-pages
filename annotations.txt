@@ -5,30 +5,4 @@
 // Seção 10: Next.Js com SSR, SSG e ISR (ou ISG)
 
 // Aula:
-// 189. Next Build vs Next Export
-
-// Ao executar o comando 'npm run build',
-// o next cria os arquivos de build na pasta
-// '<rootDir>/.next'.
-
-// Entretanto, para rodar a aplicação com
-// 'npm start', é necessário ter um servidor node.js
-// para que esses arquivos de build sejam servidos.
-
-// Porém, nem todo servidor gratuito permite que se rode
-// um servidor node.js, a fim de que toda vez que o usuário
-// acesse o recurso, o servidor faça o processo de SSR, para
-// entregar o 'html/css/js' já pronto para o browser apenas
-// ler esses arquivos sem fazer nenhum processo de "hidratação".
-
-// Com SSG, é possível usar o comando (após o build) 'npm run export',
-// pois o next exporta os arquivos estáticos do site para o diretório
-// '<rootDir>/out'. Esses arquivos de build podem ser subidos para
-// uma plataforma online e a aplicação pode rodar sem a necessidade de
-// se ter um servidor node.js online.
-
-// Essa é a principal diferença do 'build' comum para o 'export'.
-
-// Caso o dev use SSR ou ISR, é realmente necessário ter um servidor
-// node.js operando, pois esses tipo de Data Fetching requerem a
-// re-hidratação dos arquivos no momento que o usuário acessar o recurso.
+// 190. Página de erro 404
