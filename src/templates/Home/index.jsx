@@ -5,6 +5,7 @@ import { GridTwoColumns } from '../../components/GridTwoColumns';
 import { GridContent } from '../../components/GridContent';
 import { GridText } from '../../components/GridText';
 import { GridImage } from '../../components/GridImage';
+import { theme } from '@/styles/theme';
 
 export const Home = ({ data }) => {
   const { menu, sections, footerHtml, slug, title } = data[0];
@@ -14,6 +15,8 @@ export const Home = ({ data }) => {
     <>
       <Head>
         <title>{title}</title>
+        <meta name="theme-color" content={theme.colors.primaryColor} />
+        <meta name="description" content="beautiful site built with Next.js" />
       </Head>
       <Base
         links={links}
