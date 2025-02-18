@@ -11,7 +11,7 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "test": "jest",
-    "deploy-static": "next build && next export"
+    "deploy-static": "npm run build && npm run export"
   },
   "dependencies": {
     "@styled-icons/material-outlined": "^10.28.0",
