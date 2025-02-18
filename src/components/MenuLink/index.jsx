@@ -11,7 +11,7 @@ export const MenuLink = ({ children, link, newTab = false }) => {
 
   if (nextLink) {
     return (
-      <Link href={link} passHref style={{ textDecoration: 'none' }}>
+      <Link href={link} passHref legacyBehavior>
         <Styled.Container target={target}>{children}</Styled.Container>
       </Link>
     );

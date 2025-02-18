@@ -1,13 +1,13 @@
 import styled, { css } from 'styled-components';
 
-export const Container = styled.span`
+export const Container = styled.a`
   ${({ theme }) => css`
     display: block;
     font-size: ${theme.font.sizes.small};
     padding: ${theme.spacings.small};
     color: ${theme.colors.primaryColor};
     position: relative;
-    cursor: pointer;
+    text-decoration: none;
 
     &::after {
       content: '';
