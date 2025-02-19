@@ -23,6 +23,8 @@ Page.propTypes = {
 //   };
 // };
 
+export const runtime = 'experimental-edge';
+
 export const getServerSideProps = async (ctx) => {
   let data = null;
 
