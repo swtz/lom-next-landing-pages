@@ -2,53 +2,28 @@
 // Storybook, Strapi, HTML e CSS com TypeScript e JavaScript
 // by Luiz Otávio Miranda.
 
-// Seção 10: Next.Js com SSR, SSG e ISR (ou ISG)
+// Seção 10: Next.js com SSR, SSG e ISR (ou ISG)
 
 // Aula:
-// 198. Conversa sobre metatags, SEO e Favicon
+// 199. getServerSideProps - SSR - Server Side Rendering
 
-// -> robots.txt
-// É um arquivo que permite o dev definir quais pastas
-// serão BLOQUEADAS, a fim de que os 'buscadores' não
-// consigam ler elas.
+// getStaticProps -> faz o 'pre-render' no momento da build
+// getServerSideProps -> faz o 'pre-render' a cada requisição
 
-// Referência:
-// https://developers-google-com.translate.goog/search/docs/crawling-indexing/robots-meta-tag?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=tc
+// Vantagens do SSR:
 
+// Não é necessário o método 'getStaticPaths' o qual informa
+// ao 'next' quais rotas existem na aplicação, pois ele faz
+// isso em tempo real (a cada requisição).
 
-// É possível usar as metatags também para esse fim.
-// -> metatags
-// São tags html que permitem os buscadores encontrarem informações
-// específicas do website. Eles podem ou não usar essas informações.
+// Não é necessário ter de re-buildar o projeto cada vez
+// que uma mudança ocorre na API.
 
-// Referências:
-// https://yoast.com/meta-descriptions/
-// https://developers.google.com/search/docs/crawling-indexing/special-tags
+// Uma aplicação 'next' com SSR tem um comportamento parecido
+// com algumas tecnologias web conhecidas como Django e PHP
+// (buscam os dados da API a cada requisição).
 
-
-// Open Graph Protocol
-// https://ogp.me/
-// São valores passados para as metatags que modificam
-// a exibição da página quando compartilhada, por exemplo,
-// nas redes sociais (aquele card que exibe um resumo da página).
-
-// Por exemplo, o "twitter" possui uma doc sobre as suas metatags, ou seja,
-// quando definidas no website criado, ao compartilhar o link do website
-// no "twitter", ele procurará por essas metatags e exibirá algumas informações
-// no formato de 'card' com detalhes específicos do site.
-
-// -> favicon.ico
-// É o ícone referência da aplicação.
-
-// Caso o ícone possua uma extensão de arquivo conhecida:
-// <Head>
-//     <link rel="shortcut icon" href="favicon.png"></link>
-// </Head>
-
-// Se tiver a extensão '.ico', basta colocá-lo na pasta
-// 'public' que a aplicação em sí já o reconhece.
-
-
-// Recomendações do coach-luiz:
-// metatags: "title", "description", "theme-color", "og"
-// colocar 'favicon' também.
+// Usando SSR não é mais possível usar o comando 'npx next export',
+// pois a aplicação utilizará não mais a build static e sim a
+// build de produção, ou seja, é necessário executar a aplicação
+// com o comando 'npm start'.
