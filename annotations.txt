@@ -27,3 +27,6 @@
 // pois a aplicação utilizará não mais a build static e sim a
 // build de produção, ou seja, é necessário executar a aplicação
 // com o comando 'npm start'.
+
+// Problems with CF Pages deploy was solved following this GitHub issue:
+// https://github.com/cloudflare/next-on-pages/issues/908
