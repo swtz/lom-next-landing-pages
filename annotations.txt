@@ -30,3 +30,5 @@
 
 // Problems with CF Pages deploy was solved following this GitHub issue:
 // https://github.com/cloudflare/next-on-pages/issues/908
+
+// finished class.
