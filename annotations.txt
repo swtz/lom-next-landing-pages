@@ -5,30 +5,8 @@
 // Seção 10: Next.js com SSR, SSG e ISR (ou ISG)
 
 // Aula:
-// 199. getServerSideProps - SSR - Server Side Rendering
+// 200. Sites híbridos com getStaticProps e getServerSideProps
 
-// getStaticProps -> faz o 'pre-render' no momento da build
-// getServerSideProps -> faz o 'pre-render' a cada requisição
-
-// Vantagens do SSR:
-
-// Não é necessário o método 'getStaticPaths' o qual informa
-// ao 'next' quais rotas existem na aplicação, pois ele faz
-// isso em tempo real (a cada requisição).
-
-// Não é necessário ter de re-buildar o projeto cada vez
-// que uma mudança ocorre na API.
-
-// Uma aplicação 'next' com SSR tem um comportamento parecido
-// com algumas tecnologias web conhecidas como Django e PHP
-// (buscam os dados da API a cada requisição).
-
-// Usando SSR não é mais possível usar o comando 'npx next export',
-// pois a aplicação utilizará não mais a build static e sim a
-// build de produção, ou seja, é necessário executar a aplicação
-// com o comando 'npm start'.
-
-// Problems with CF Pages deploy was solved following this GitHub issue:
-// https://github.com/cloudflare/next-on-pages/issues/908
-
-// finished class.
+// Aula de 1 minuto que mostra a possibilidade de usar, tanto
+// 'getStaticProps' quanto 'getServerSideProps', porém em rotas
+// diferentes. Essa seria um site híbrido.
