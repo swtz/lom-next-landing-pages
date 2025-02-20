@@ -31,6 +31,8 @@ export const getStaticPaths = async () => {
   };
 };
 
+export const runtime = 'experimental-edge';
+
 export const getStaticProps = async (ctx) => {
   let data = null;
 
