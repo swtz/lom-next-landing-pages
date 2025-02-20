@@ -10,3 +10,5 @@
 // Aula de 1 minuto que mostra a possibilidade de usar, tanto
 // 'getStaticProps' quanto 'getServerSideProps', porém em rotas
 // diferentes. Essa seria um site híbrido.
+=======
+// 202. getStaticProps com "revalidate"
