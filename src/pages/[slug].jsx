@@ -50,5 +50,6 @@ export const getStaticProps = async (ctx) => {
     props: {
       data,
     },
+    revalidate: 600, // 10min
   };
 };
