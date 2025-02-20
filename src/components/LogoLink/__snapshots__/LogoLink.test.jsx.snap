@@ -13,6 +13,8 @@ exports[`<LogoLink /> should match snapshot 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   color: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c1 > img {

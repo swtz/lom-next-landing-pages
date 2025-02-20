@@ -83,6 +83,8 @@ exports[`<Menu /> should not render links 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   color: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c8 > img {
@@ -320,6 +322,8 @@ exports[`<Menu /> should render Logo and Main Menu Nav 1`] = `
   -webkit-text-decoration: none;
   text-decoration: none;
   color: inherit;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c8 > img {

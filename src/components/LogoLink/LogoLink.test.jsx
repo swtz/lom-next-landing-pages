@@ -24,6 +24,23 @@ describe('<LogoLink />', () => {
     );
   });
 
+  it('should render internal link', () => {
+    renderTheme(
+      <LogoLink link="/target" text="Hello, world!" srcImg="image.jpg" />,
+    );
+    expect(screen.getByAltText('Hello, world!')).toHaveAttribute(
+      'src',
+      'image.jpg',
+    );
+  });
+
+  it('should render internal link with text only', () => {
+    renderTheme(<LogoLink link="/target" text="Hello, world!" />);
+    expect(
+      screen.getByRole('heading', { name: 'Hello, world!' }),
+    ).toBeInTheDocument();
+  });
+
   it('should match snapshot', () => {
     const { container } = renderTheme(
       <LogoLink link="#target" text="Hello, world!" srcImg="image.jpg" />,

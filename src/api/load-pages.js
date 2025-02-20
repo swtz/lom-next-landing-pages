@@ -1,4 +1,4 @@
-import { mapData } from '@/api/map-data';
+import { mapData } from '../api/map-data';
 import config from '../config/index';
 
 export const loadPages = async (slug = '') => {

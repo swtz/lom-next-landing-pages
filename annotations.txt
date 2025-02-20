@@ -2,19 +2,4 @@
 // Storybook, Strapi, HTML e CSS com TypeScript e JavaScript
 // by Luiz Otávio Miranda.
 
-// Seção 10: Next.js com SSR, SSG e ISR (ou ISG)
-
-// A feature ISR não funciona (até onde sei) com CF Pages.
-// Nesse momento, por algum motivo, quando faço a build
-// (npm run build), aparentemente, não é detectado a
-// propriedade 'revalidate' que torna possível o comportamento
-// proposto pelo ISR. Vou continuar usando (forçosamente)
-// a feature SSR até que eu perceba o que acarretou esse problema.
-
-// O site segue funcionando normalmente. Entretanto, o comando
-// 'npm run dev' lança uma exceção no console relacionada ao
-// 'Styled-components' afirmando que 'window' é 'undefined'.
-
-// Pelo que percebi isso aconteceu após as modificações feitas
-// seguindo a documentação do CF Pages para fazer deploy de
-// aplicações que usam a feature SSR.
+// 203. Testando load-pages (e corrigindo outros testes)

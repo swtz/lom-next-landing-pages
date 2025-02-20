@@ -11,6 +11,14 @@ describe('<MenuLink />', () => {
     );
   });
 
+  it('should render a internal link', () => {
+    renderTheme(<MenuLink link="/something">link</MenuLink>);
+    expect(screen.getByRole('link', { name: 'link' })).toHaveAttribute(
+      'target',
+      '_self',
+    );
+  });
+
   it('should open in a new tab', () => {
     renderTheme(
       <MenuLink link="https://localhost" newTab>
@@ -30,12 +38,12 @@ describe('<MenuLink />', () => {
     expect(container.firstChild).toMatchInlineSnapshot(`
       .c0 {
         display: block;
-        -webkit-text-decoration: none;
-        text-decoration: none;
         font-size: 1.6rem;
         padding: 1.6rem;
         color: #0A1128;
         position: relative;
+        -webkit-text-decoration: none;
+        text-decoration: none;
       }
 
       .c0::after {
