@@ -8,7 +8,7 @@ export default function Index({ data = null }) {
 
 export const runtime = 'experimental-edge';
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   let data = null;
 
   try {
