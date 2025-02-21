@@ -7,3 +7,8 @@
 // Instalação do Typescript:
 // criar arquivo 'tsconfig.json' no root da aplicação
 // [terminal]: npm i -D typescript @types/react @types/node
+
+// Tomar cuidado com o estilo de importação personalizado do 'next',
+// pois, pleo visto, não funciona bem com o Typescript.
+
+// Typescript É Javascript.
