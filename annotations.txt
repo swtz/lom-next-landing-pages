@@ -3,3 +3,7 @@
 // by Luiz Otávio Miranda.
 
 // 204. Migração de JavaScript para TypeScript (.js para .ts, .jsx para .tsx)
+
+// Instalação do Typescript:
+// criar arquivo 'tsconfig.json' no root da aplicação
+// [terminal]: npm i -D typescript @types/react @types/node

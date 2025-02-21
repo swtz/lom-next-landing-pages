@@ -5,7 +5,7 @@ import { GridTwoColumns } from '../../components/GridTwoColumns';
 import { GridContent } from '../../components/GridContent';
 import { GridText } from '../../components/GridText';
 import { GridImage } from '../../components/GridImage';
-import { theme } from '@/styles/theme';
+import { theme } from '..//../styles/theme';
 
 export const Home = ({ data }) => {
   const { menu, sections, footerHtml, slug, title } = data[0];

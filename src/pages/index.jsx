@@ -1,6 +1,6 @@
 import P from 'prop-types';
-import { Home } from '@/templates/Home';
-import { loadPages } from '@/api/load-pages';
+import { Home } from '../templates/Home';
+import { loadPages } from '../api/load-pages';
 
 export default function Index({ data = null }) {
   return <Home data={data} />;

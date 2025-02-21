@@ -31,6 +31,8 @@
     "@storybook/test": "^8.5.6",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
+    "@types/node": "^22.13.4",
+    "@types/react": "^19.0.10",
     "babel-plugin-styled-components": "^1.8.0",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^8.1.0",
@@ -42,6 +44,7 @@
     "jest-environment-jsdom": "^29.7.0",
     "jest-styled-components": "^7.2.0",
     "prettier": "^2.2.1",
-    "storybook": "^8.5.6"
+    "storybook": "^8.5.6",
+    "typescript": "^5.7.3"
   }
 }
