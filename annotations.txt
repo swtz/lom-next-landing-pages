@@ -2,28 +2,4 @@
 // Storybook, Strapi, HTML e CSS com TypeScript e JavaScript
 // by Luiz Otávio Miranda.
 
-// 204. Migração de JavaScript para TypeScript (.js para .ts, .jsx para .tsx)
-
-// Instalação do Typescript:
-// criar arquivo 'tsconfig.json' no root da aplicação
-// [terminal]: npm i -D typescript @types/react @types/node
-
-// Tomar cuidado com o estilo de importação personalizado do 'next',
-// pois, pleo visto, não funciona bem com o Typescript.
-
-// Typescript É Javascript.
-
-// Adicionar configurações do Typescript ao ESLint:
-// [terminal]: npm i -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
-
-// Coach-Luiz tip:
-// É mais vantajoso e menos complexo - ao migrar uma aplicação de '.js' para '.ts'
-// - fazer essa migração de dentro para fora, ou seja, o dev começa pelo código
-// mais interno (ou componente mais interno) e depois vai "tipando" os componentes
-// mais externos que fazem uso desses componentes mais internos. Isso evita retrabalho.
-
-// Instalar '@types' para Styled-components:
-// npm i --save-dev @types/styled-components
-
-// Configurar 'Jest' para funcionar com Typescript:
-// [terminal]: npm i -D @types/jest @types/testing-library__jest-dom
+// 205. Componente Footer
