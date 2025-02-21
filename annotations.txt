@@ -12,3 +12,6 @@
 // pois, pleo visto, não funciona bem com o Typescript.
 
 // Typescript É Javascript.
+
+// Adicionar configurações do Typescript ao ESLint:
+// [terminal]: npm i -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
