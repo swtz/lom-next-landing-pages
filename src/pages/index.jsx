@@ -6,8 +6,6 @@ export default function Index({ data = null }) {
   return <Home data={data} />;
 }
 
-export const runtime = 'experimental-edge';
-
 export const getStaticProps = async () => {
   let data = null;
 

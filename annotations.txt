@@ -2,4 +2,4 @@
 // Storybook, Strapi, HTML e CSS com TypeScript e JavaScript
 // by Luiz Otávio Miranda.
 
-// 203. Testando load-pages (e corrigindo outros testes)
+// 204. Migração de JavaScript para TypeScript (.js para .ts, .jsx para .tsx)
