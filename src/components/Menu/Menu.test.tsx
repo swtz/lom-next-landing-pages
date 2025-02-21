@@ -12,7 +12,7 @@ const logoData = {
 describe('<Menu />', () => {
   it('should render Logo and Main Menu Nav', () => {
     const { container } = renderTheme(
-      <Menu link={linksMock} logoData={logoData} />,
+      <Menu links={linksMock} logoData={logoData} />,
     );
     expect(screen.getByRole('heading', { name: 'Logo' })).toBeInTheDocument();
     expect(
@@ -24,7 +24,7 @@ describe('<Menu />', () => {
 
   it('should render menu mobile and button for open and close the menu', () => {
     const { container } = renderTheme(
-      <Menu link={linksMock} logoData={logoData} />,
+      <Menu links={linksMock} logoData={logoData} />,
     );
 
     const button = screen.getByLabelText('Open/Close menu');
