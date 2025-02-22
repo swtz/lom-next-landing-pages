@@ -1,8 +1,8 @@
 import { screen } from '@testing-library/react';
-import { Heading } from '.';
 import { renderTheme } from '../../styles/render-theme';
 import { theme } from '../../styles/theme';
 import { ThemeProvider } from 'styled-components';
+import { Heading } from '.';
 
 describe('<Heading />', () => {
   it('should render with default values', () => {
@@ -109,7 +109,6 @@ describe('<Heading />', () => {
 
   it('should render correct heading element', () => {
     const { container } = renderTheme(<Heading as="h6">texto</Heading>);
-    const heading = screen.getByRole('heading', { name: 'texto' });
     const h6 = container.querySelector('h6');
 
     expect(h6.tagName.toLowerCase()).toBe('h6');
