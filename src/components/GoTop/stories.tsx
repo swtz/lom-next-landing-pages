@@ -1,17 +1,12 @@
+import { Meta, StoryFn } from '@storybook/react/types-6-0';
 import { GoTop } from '.';
 
 export default {
   title: 'GoTop',
   component: GoTop,
-  args: {
-    children: 'GoTop',
-  },
-  argsTypes: {
-    children: { type: 'string' },
-  },
-};
+} as Meta;
 
-export const Template = (args) => {
+export const Template: StoryFn = () => {
   return (
     <div style={{ height: '400vh' }}>
       <h1>
@@ -50,7 +45,7 @@ export const Template = (args) => {
         saepe ratione accusantium corporis eum, assumenda et laudantium
         dignissimos.
       </p>
-      <GoTop {...args} />
+      <GoTop />
     </div>
   );
 };

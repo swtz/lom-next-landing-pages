@@ -2,4 +2,4 @@
 // Storybook, Strapi, HTML e CSS com TypeScript e JavaScript
 // by Luiz Otávio Miranda.
 
-// 205. Componente Footer
+// 206. Componentes Heading e GoToTop
