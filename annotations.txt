@@ -2,4 +2,4 @@
 // Storybook, Strapi, HTML e CSS com TypeScript e JavaScript
 // by Luiz Otávio Miranda.
 
-// 214. Testando se tudo está OK
+// 216. Lint de código no pré-commit com Husky e Lint-Staged
