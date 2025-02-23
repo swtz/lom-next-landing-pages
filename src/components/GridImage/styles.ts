@@ -18,9 +18,7 @@ export const Grid = styled.div`
 `;
 
 export const GridElement = styled.div`
-  ${() => css`
-    overflow: hidden;
-  `}
+  overflow: hidden;
 `;
 
 export const Image = styled.img`
