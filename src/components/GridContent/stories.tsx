@@ -1,13 +1,14 @@
-import { GridContent } from '.';
+import { Meta, StoryFn } from '@storybook/react/types-6-0';
+import { GridContent, GridContentProps } from '.';
 import mock from './mock';
 
 export default {
   title: 'GridContent',
   component: GridContent,
   args: mock,
-};
+} as Meta;
 
-export const Light = (args) => {
+export const Light: StoryFn<GridContentProps> = (args) => {
   return (
     <div>
       <GridContent {...args} />
@@ -15,7 +16,7 @@ export const Light = (args) => {
   );
 };
 
-export const Dark = (args) => {
+export const Dark: StoryFn<GridContentProps> = (args) => {
   return (
     <div>
       <GridContent {...args} />

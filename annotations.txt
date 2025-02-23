@@ -2,20 +2,4 @@
 // Storybook, Strapi, HTML e CSS com TypeScript e JavaScript
 // by Luiz Otávio Miranda.
 
-// 206. Componentes Heading e GoToTop
-
-// No Typescript existe a possibilidade de escolher as propriedades
-// de um tipo ao herdá-lo.
-
-// Exemplo com base na tipagem de um 'Styled-component':
-export const Title = styled.h1<
-  Pick<HeadingProps, 'colorDark' | 'size' | 'uppercase'>
->`
-  ${({ theme, colorDark, size, uppercase }) => css`
-    color: ${colorDark ? theme.colors.primaryColor : theme.colors.white};
-    ${titleSize[size](theme)};
-    ${titleCase(uppercase)};
-  `}
-`;
-// Assim, são evitados erros relacionados ao desuso de alguma propriedade
-// oriunda do tipo.
+// 208. GridContent, GridImage, GridText, GridTwoColumns e Sections
