@@ -2,4 +2,4 @@
 // Storybook, Strapi, HTML e CSS com TypeScript e JavaScript
 // by Luiz Otávio Miranda.
 
-// 209. Templates mais simples: PageNotFound, Loading e Base
+// 210. Template Home
