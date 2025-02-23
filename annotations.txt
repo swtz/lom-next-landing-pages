@@ -2,4 +2,4 @@
 // Storybook, Strapi, HTML e CSS com TypeScript e JavaScript
 // by Luiz Otávio Miranda.
 
-// 203. Testando load-pages (e corrigindo outros testes)
+// 214. Testando se tudo está OK
