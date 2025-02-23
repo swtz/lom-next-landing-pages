@@ -71,6 +71,12 @@ exports[`<Menu /> should not render links 1`] = `
   height: 2.5rem;
 }
 
+.c1 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
 .c8 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -99,12 +105,6 @@ exports[`<Menu /> should not render links 1`] = `
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-}
-
-.c1 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
 }
 
 @media (max-width:768px) {
@@ -306,6 +306,12 @@ exports[`<Menu /> should render Logo and Main Menu Nav 1`] = `
   height: 2.5rem;
 }
 
+.c1 {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
 .c8 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -336,10 +342,31 @@ exports[`<Menu /> should render Logo and Main Menu Nav 1`] = `
   flex-flow: row wrap;
 }
 
-.c1 {
-  display: inline-block;
-  vertical-align: middle;
-  overflow: hidden;
+.c10 {
+  display: block;
+  font-size: 1.6rem;
+  padding: 1.6rem;
+  color: #0A1128;
+  position: relative;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c10::after {
+  content: '';
+  position: absolute;
+  bottom: 0.8rem;
+  left: 50%;
+  width: 0;
+  height: 0.2rem;
+  background: #DC143C;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.c10:hover::after {
+  left: 25%;
+  width: 50%;
 }
 
 @media (max-width:768px) {
@@ -463,7 +490,78 @@ exports[`<Menu /> should render Logo and Main Menu Nav 1`] = `
         <nav
           aria-label="Main menu"
           class="c9"
-        />
+        >
+          <a
+            class="c10"
+            href="#target1"
+            target="_self"
+          >
+            Link 1
+          </a>
+          <a
+            class="c10"
+            href="#target2"
+            target="_self"
+          >
+            Link 2
+          </a>
+          <a
+            class="c10"
+            href="#target3"
+            target="_self"
+          >
+            Link 3
+          </a>
+          <a
+            class="c10"
+            href="#target4"
+            target="_self"
+          >
+            Link 4
+          </a>
+          <a
+            class="c10"
+            href="#target5"
+            target="_self"
+          >
+            Link 5
+          </a>
+          <a
+            class="c10"
+            href="#target6"
+            target="_self"
+          >
+            Link 6
+          </a>
+          <a
+            class="c10"
+            href="#target7"
+            target="_self"
+          >
+            Link 7
+          </a>
+          <a
+            class="c10"
+            href="#target8"
+            target="_self"
+          >
+            Link 8
+          </a>
+          <a
+            class="c10"
+            href="#target9"
+            target="_self"
+          >
+            Link 9
+          </a>
+          <a
+            class="c10"
+            href="#target10"
+            target="_self"
+          >
+            Link 10
+          </a>
+        </nav>
       </div>
     </div>
   </div>
