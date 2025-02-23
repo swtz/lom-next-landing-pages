@@ -1,3 +1,5 @@
+import { GridTextProps } from '.';
+
 export default {
   background: false,
   title: 'My grid',
@@ -20,4 +22,4 @@ export default {
         'Lorem ipsum dolor sit amet. Et asperiores explicaboEst earum ea accusamus similique aut ipsa totam aut laborum quidem rem vero quisquam est velit labore? Eos veniam atqueUt consequatur id eius enim.',
     },
   ],
-};
+} as GridTextProps;
