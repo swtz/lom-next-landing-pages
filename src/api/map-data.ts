@@ -1,8 +1,10 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { mapSections } from './map-sections';
 import { mapMenu } from './map-menu';
+import { PageData } from '../templates/Home';
 
-export const mapData = (pagesData = { data: [] }) => {
-  return pagesData.data.map((data) => {
+export const mapData = (pagesData = { data: [] } as any): PageData[] => {
+  return pagesData.data.map((data: any): PageData => {
     const {
       footer_text: footerHtml = [{ children: [{}] }],
       slug = '',

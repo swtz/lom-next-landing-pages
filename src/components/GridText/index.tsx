@@ -3,7 +3,7 @@ import { SectionBackground } from '../SectionBackground';
 import { Heading } from '../Heading';
 import { TextComponent } from '../TextComponent';
 
-type GridTextElementProps = {
+export type GridTextElementProps = {
   title: string;
   description: string;
 };
@@ -14,6 +14,7 @@ export type GridTextProps = {
   background?: boolean;
   grid: GridTextElementProps[];
   sectionId?: string;
+  component?: string;
 };
 
 export const GridText = ({

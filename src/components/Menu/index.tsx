@@ -7,7 +7,7 @@ import { LogoLink, LogoLinkProps } from '../LogoLink';
 import { NavLinks, NavLinksProps } from '../NavLinks';
 
 export type MenuProps = NavLinksProps & {
-  logoData: LogoLinkProps;
+  logoData?: LogoLinkProps;
 };
 
 export const Menu = ({ links = [], logoData }: MenuProps) => {

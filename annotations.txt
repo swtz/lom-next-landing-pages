@@ -2,4 +2,4 @@
 // Storybook, Strapi, HTML e CSS com TypeScript e JavaScript
 // by Luiz Otávio Miranda.
 
-// 212. Migrando a pasta pages do Next.js
+// 213. Migrando a pasta api

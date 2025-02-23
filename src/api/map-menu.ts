@@ -1,4 +1,10 @@
-export const mapMenu = (menu = { logo: { data: null } }) => {
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { MenuLinkProps } from '../components/MenuLink';
+import { PageData } from '../templates/Home';
+
+export const mapMenu = (
+  menu = { logo: { data: null } } as any,
+): PageData['menu'] => {
   const {
     logo_text: text = '',
     logo_link: link = '',
@@ -18,8 +24,8 @@ export const mapMenu = (menu = { logo: { data: null } }) => {
   };
 };
 
-export const mapMenuLinks = (links = []) => {
-  return links.map((item) => {
+export const mapMenuLinks = (links = []): MenuLinkProps[] => {
+  return links.map((item): MenuLinkProps => {
     const {
       open_in_new_tab: newTab = false,
       link_text: children = '',

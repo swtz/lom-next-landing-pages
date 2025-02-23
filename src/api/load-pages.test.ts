@@ -34,7 +34,7 @@ describe('load-pages', () => {
   });
 
   it('should call fetch with correct slug', async () => {
-    const result = await loadPages('atenção testando');
+    await loadPages('atenção testando');
     expect(mockFetch).toHaveBeenCalledWith(
       config.url + '/pages/?filters[slug]=atenotestando&populate=deep',
     );
