@@ -27,7 +27,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   };
 };
 
-export const runtime = 'edge';
+export const runtime = 'experimental-edge';
 
 export const getStaticProps: GetStaticProps<HomeProps> = async (ctx) => {
   let data = null;
