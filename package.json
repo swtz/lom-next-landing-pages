@@ -59,12 +59,16 @@
     "lint-staged": "^15.4.3",
     "prettier": "^2.2.1",
     "storybook": "^8.5.6",
-    "typescript": "^5.7.3"
+    "typescript": "^5.7.3",
+    "vercel": "39.1.1"
   },
   "lint-staged": {
     "src/**/*": [
       "npm run lint -- --fix",
       "npm test -- --bail -o"
     ]
+  },
+  "overrides": {
+    "vercel": "$vercel"
   }
 }
