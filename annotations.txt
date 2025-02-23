@@ -2,6 +2,8 @@
 // Storybook, Strapi, HTML e CSS com TypeScript e JavaScript
 // by Luiz Otávio Miranda.
 
-// 216. Lint de código no pré-commit com Husky e Lint-Staged
-// another testing husky...
-// #3
+// Término da Seção 11.
+// Continuarei o curso e depois farei um breakpoint para consolidação
+// do conhecimento.
+
+// Farei a configuração do CF Pages para colocar o site online com SSR.
