@@ -5,7 +5,11 @@ const containerBackgroundActivate = (theme) => css`
   color: ${theme.colors.white};
 `;
 
-export const Container = styled.div`
+type ContainerProps = {
+  background: boolean;
+};
+
+export const Container = styled.div<ContainerProps>`
   ${({ theme, background }) => css`
     background: ${theme.colors.white};
     color: ${theme.colors.primaryColor};
