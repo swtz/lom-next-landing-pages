@@ -2,4 +2,4 @@
 // Storybook, Strapi, HTML e CSS com TypeScript e JavaScript
 // by Luiz Otávio Miranda.
 
-// 210. Template Home
+// 211. Migrando styles
