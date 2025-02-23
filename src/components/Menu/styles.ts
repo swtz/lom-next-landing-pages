@@ -8,7 +8,7 @@ const menuVisible = () => css`
 `;
 
 type ContainerProps = {
-  visible: boolean;
+  visible?: boolean;
 };
 
 export const Container = styled.div<ContainerProps>`
