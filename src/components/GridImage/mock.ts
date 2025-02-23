@@ -1,3 +1,5 @@
+import { GridImageProps } from '.';
+
 export default {
   background: false,
   title: 'My grid',
@@ -29,4 +31,4 @@ export default {
       srcImg: '/assets/images/image_006.webp',
     },
   ],
-};
+} as GridImageProps;
