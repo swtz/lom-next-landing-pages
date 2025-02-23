@@ -2,4 +2,4 @@
 // Storybook, Strapi, HTML e CSS com TypeScript e JavaScript
 // by Luiz Otávio Miranda.
 
-// 208. GridContent, GridImage, GridText, GridTwoColumns e Sections
+// 209. Templates mais simples: PageNotFound, Loading e Base
